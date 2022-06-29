@@ -86,7 +86,7 @@ async function service_queue(msg) {
 // ##############################################################################################################
 
 // NO EDITAR #################################################################################################
-let client = redis.createClient({ host: process.env.redis || "localhost" });
+let client = redis.createClient({ url: process.env.redis || "redis://localhost" });
 client.connect();
 if (process.env.TEST != "test") {
   console.log("Iniciando servidor");
