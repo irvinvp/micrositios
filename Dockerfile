@@ -5,7 +5,7 @@ RUN npm install
 # Label para interfaz traefik
 LABEL traefik.http.routers.irvin.rule="Host(`irvin.sub.omnitracs.online`)"
 LABEL traefik.http.routers.irvin.tls.certresolver="myresolver"
-LABEL traefik.http.services.irvin.loadbalancer.server.port="80"
+LABEL traefik.http.services.irvin.loadbalancer.server.port="3428"
 # Env para configurar conexiones
 ENV TEST="No"
 ENV ip_queue="conector:conector@rabbitmq"
