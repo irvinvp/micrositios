@@ -9,7 +9,7 @@ LABEL traefik.http.services.irvin.loadbalancer.server.port="80"
 # Env para configurar conexiones
 ENV TEST="No"
 ENV ip_queue="conector:conector@rabbitmq"
-ENV redis="redis"
+ENV redis="redis://redis"
 ENV queue="irvin"
 ENV port="3428"
 ENV app_name="APP_irvin_"
