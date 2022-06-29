@@ -21,4 +21,4 @@ jobs:
           tags: registry.sub.omnitracs.online/irvin:latest
       - name: REST API with curl
         run: |
-          curl -H "Authorization: Bearer omnitracssolera" https://watch.sub.omnitracs.online/v1/update
+          curl -H "Authorization: Bearer ${{ secrets.WATCHTOWER }}" https://watch.sub.omnitracs.online/v1/update
