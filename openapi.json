@@ -1,0 +1,77 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "API Micrositios",
+    "description": "API base para sistema de Micrositios",
+    "version": "0.1.2"
+  },
+  "servers": [
+    {
+      "url": "/api/v1"
+    }
+  ],
+  "tags": [
+    {
+      "name": "ejemplos",
+      "description": "ejemplos"
+    }
+  ],
+  "paths": {
+    "/last_position": {
+      "get": {
+        "tags": [
+          "ejemplos"
+        ],
+        "summary": "Regresa la ultima posicion del dispositivo",
+        "description": "Regresa la informacion del dispositivo",
+        "operationId": "last_position",
+        "parameters": [
+          {
+            "name": "serial",
+            "in": "query",
+            "description": "Serial",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Operacion correcta",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/dato1"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "No existe metodo",
+            "content": {}
+          },
+          "501": {
+            "description": "Falta parametro serial",
+            "content": {}
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "dato1": {
+        "type": "object",
+        "properties": {
+          "message": {
+            "type": "string"
+          },
+          "serial": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}
