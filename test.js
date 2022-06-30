@@ -2,7 +2,15 @@ var main = require("./main.js");
 var assert = require("assert");
 describe("Test service_queue()", function () {
   it("Funcion de guardado debe regresar true", async function () {
-    assert.equal(await main.service_queue("84051234567890"), true);
+    assert.equal(
+      await main.service_queue(
+        "830512345678900101010266C062BD21B062BD21B00F5DD06BBF06779D0000000000" +
+          "00000000000A000032FFAF6F0AFE002E6B100001000003000000000000000003C5D2" +
+          "A3004E2261000030E4000000000000000000003E7000003E7000003E7000003E7000" +
+          "0000000043C5CF0000000000000000"
+      ),
+      true
+    );
   });
   it("Funcion debe regresar false con datos erroneos", async function () {
     assert.equal(await main.service_queue(""), false);
