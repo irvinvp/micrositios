@@ -76,4 +76,7 @@ describe("Test service_api()", function () {
       ).message
     );
   });
+  it("Close redis", async function () {
+    assert.ok(main.client.quit());
+  });
 });
