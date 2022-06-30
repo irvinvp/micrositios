@@ -3,7 +3,7 @@
   "info": {
     "title": "API Micrositios",
     "description": "API base para sistema de Micrositios",
-    "version": "0.1.2"
+    "version": "0.1"
   },
   "servers": [
     {
