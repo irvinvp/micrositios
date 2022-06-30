@@ -12,7 +12,7 @@ jobs:
         image: redis
     steps:
       - name: Install dependencies
-        run: npm ci
+        run: npm install
       - name: Run test
         run: npm test
         env: 
