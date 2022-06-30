@@ -1,4 +1,4 @@
-# Micrositios Demo
+# Micrositios Autocontenidos
 ![flujo](https://github.com/irvinvp/micrositios/actions/workflows/main.yml/badge.svg)
 
 Proyecto generico para creacion de Micrositios.
