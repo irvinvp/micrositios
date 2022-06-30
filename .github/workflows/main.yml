@@ -11,8 +11,10 @@ jobs:
       redis:
         image: redis
     steps:
+      - name: Check out
+        uses: actions/checkout@v3
       - name: Install dependencies
-        run: npm install
+        run: npm ci
       - name: Run test
         run: npm test
         env: 
