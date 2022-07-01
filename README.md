@@ -2,6 +2,7 @@
 ![flujo](https://github.com/irvinvp/micrositios/actions/workflows/main.yml/badge.svg)
 
 Proyecto generico para creacion de Micrositios.
+![diagrama](https://user-images.githubusercontent.com/10320683/176917239-b87431f1-7827-4bcd-941f-64a60f39ba98.JPG)
 ## Proceso de instalación
 ```
 docker build -t micrositios .
